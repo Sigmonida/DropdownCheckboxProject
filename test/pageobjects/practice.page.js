@@ -1,7 +1,6 @@
 const Page = require('./page');
 
 class PracticePage extends Page {
-
     get dropdownMenuS1() { return $('#dropdowm-menu-1') };
     get dropdownMenuS2() { return $('#dropdowm-menu-2') };
     get dropdownMenuS3() { return $('#dropdowm-menu-3') };
@@ -17,13 +16,11 @@ class PracticePage extends Page {
     get radioButtonOrange() {return $('input[value="orange"]')};
     get radioButtonPurple() {return $('input[value="purple"]')};
     
-    
     get radioButtonLettuce() {return $('input[value="lettuce"]')};
     get radioButtonCabbage() {return $('input[value="cabbage"]')};
     get radioButtonPumpkin() {return $('input[value="pumpkin"]')};
     get selectedAndDisabledDropdown() {return $('#fruit-selects')};
     get dropdownMenuOrange() {return $('option[value="orange"]')}; 
-    
-    }
+}
 
-    module.exports = new PracticePage();
+module.exports = new PracticePage();
